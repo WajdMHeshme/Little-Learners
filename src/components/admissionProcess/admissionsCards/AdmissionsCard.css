@@ -1,0 +1,128 @@
+.AdCard {
+    position: relative;
+    width: 31.22%;
+    margin: 100px auto;
+
+    .numtitle {
+        width: 105px;
+        position: absolute;
+        top: -168px;
+
+
+        .num {
+            width: 98px;
+            height: 77px;
+            padding: 10px 24px;
+            background-color: #ffffff;
+            border: 2px solid var(--border-color);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            font-weight: 800;
+            line-height: 1.3;
+            box-shadow: 4px 4px 0px 1px #1E1E1E;
+        }
+
+        img {
+            transform: translateX(-10%);
+        }
+
+    }
+
+    .mainCard::before {
+        content: '';
+        display: none;
+        width: 3px;
+        height: 63px;
+        position: absolute;
+        background: var(--border-color);
+        bottom: -80px;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 4px solid var(--weak-orange);
+
+    }
+    .mainCard::before:nth-last-child(5) {
+        display: none;
+    }
+
+
+    .mainCard {
+        position: relative;
+        height: 322px;
+        padding: 50px;
+        background-color: #ffffff;
+        border: 2px solid var(--border-color);
+        border-radius: 12px;
+        box-shadow: 6px 6px 0px 2px #1E1E1E;
+        margin-bottom: 80px;
+
+
+        h2 {
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 16px;
+        }
+    }
+}
+
+@media screen and (max-width:1919px) {
+    .AdCard {
+
+        .numtitle {
+            top: -140px;
+
+            img {
+                height: 63px;
+                width: 101px;
+            }
+        }
+
+        .mainCard {
+            height: 265px;
+
+            h2 {
+                font-size: 30px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1265px) {
+    .AdCard {
+        width: 46%;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .AdCard {
+        width: 100%;
+        margin: 70px auto;
+        .mainCard::before {
+            display: block;
+        }
+        .numtitle {
+            top: -158px;
+            left: 50%;
+            transform: translateX(-50%);
+
+            img {
+                height: 80px;
+                width: 130px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:430px) {
+    .mainCard {
+        height: auto !important;
+    }
+}

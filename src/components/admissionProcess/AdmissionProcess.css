@@ -1,0 +1,34 @@
+.cardsContainerAd {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.end {
+    width: 98px;
+    height: 77px;
+    padding: 10px 24px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    top: -72px;
+    background: #ffffff;
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 22px;
+    box-shadow: 8px 8px 0px 1px #1E1E1E;
+}
+
+@media screen and (max-width:992px) {
+    .cardsContainerAd {
+        margin-top: 150px;
+    }
+
+    .end {
+        display: flex;
+    }
+}
